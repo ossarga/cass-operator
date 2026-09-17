@@ -142,7 +142,7 @@ type CassandraDatacenterSpec struct {
 
 	// Config for the server, in YAML format
 	// +kubebuilder:pruning:PreserveUnknownFields
-	// +kubebuilder:validation:XPreserveUnknownFields
+	// +kubebuilder:validation:Schemaless
 	Config json.RawMessage `json:"config,omitempty"`
 
 	// ConfigSecret is the name of a secret that contains configuration for Cassandra. The
